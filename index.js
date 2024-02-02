@@ -32,7 +32,7 @@ app.post("/send-email", async (req, res) => {
   });
 
   const mailOptions = {
-    from: config.sendEmailUSer,
+    from: email,
     to: config.sendEmailUSer,
     subject: "Formulario Contactenos",
     text: `Nombre: ${name}\nCorreo: ${email}\nMensaje: ${message}`,
